@@ -1,0 +1,207 @@
+:root {
+  
+  --kir: hsl(0, 100%, 74%); 
+  --yes: hsl(154, 59%, 51%); 
+
+  
+  --mav: hsl(248, 32%, 49%); 
+
+  
+  --koy: hsl(249, 10%, 26%); 
+  --gri: hsl(246, 25%, 77%); 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  background-color: var(--kir); 
+  background-image: url('/deimages/images/bg-intro-desktop.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  gap: 30px;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.content-section {
+  flex: 1;
+  color: white;
+  text-align: left;
+  padding-right: 50px; /* Adjust as needed */
+}
+
+.content-section h1 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.content-section p {
+  font-weight: 400;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.promo-banner {
+  background-color: var(--mav);
+  color: white;
+  padding: 18px 20px;
+  border-radius: 8px;
+  text-align: center;
+  
+}
+.promo-banner a{
+  color:white;
+  text-decoration:none ;
+}
+.promo-banner a:hover{
+  text-decoration:underline;
+}
+
+
+.promo-banner .bold-text {
+  font-weight: 700;
+}
+
+.signup-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 8px rgba(0,0,0,0.15);
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 15px; 
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 15px 25px;
+  border: 1px solid var(--gri);
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--koy);
+}
+
+.signup-form input::placeholder {
+  color: var(--gri);
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: var(--mav);
+}
+
+
+
+.claim-button {
+  background-color: var(--yes);
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  
+  transition: background-color 0.3s ease;
+}
+
+.claim-button:hover {
+  background-color: hsl(154, 59%, 60%); 
+}
+
+.terms-text {
+  font-size: 11px;
+  color: var(--gri);
+  text-align: center;
+}
+
+.terms-text a {
+  color: var(--kir);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.terms-text a:hover {
+  text-decoration: underline;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+  color: var(--koy); 
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('/deimages/images/bg-intro-mobile.png');
+    padding: 30px 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  .content-section {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .content-section h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+
+  .signup-form {
+    padding: 25px;
+  }
+ 
+}

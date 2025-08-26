@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+html{
+    font-family: "Poppins", sans-serif;
+}
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:25px;
+    padding-right: 25px;
+    background-color: #000;
+}
+svg{
+    background-color: #000;
+    fill:#fff;
+}
+header .logo svg{
+    background-color: #000;
+    fill:#fff;
+    border-radius: 50%;
+}
+header .search{
+    display: flex;
+}
+header .search svg{
+    width: 45px;
+    padding:10px;
+    background-color: #242424;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+header .search-wrapper{
+    width: 500px;
+    height: 50px;
+    position: relative;
+}
+header .search-wrapper svg{
+    width: 45px;
+    fill:rgb(184, 184, 184);
+    position:absolute;
+    top:0;
+    left:0;
+}
+header .search-wrapper input{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    padding-left:50px;
+    background-color: #242424;
+    color:#fff;
+    border:#000;
+    
+}
+header .search-wrapper input::placeholder{
+    font-size: 16px;
+    color:rgb(184, 184, 184);
+}
+header .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .right .header-menu{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    margin-right:50px;
+    padding-right: 30px;
+    border-right:1px solid #f2f2f2;
+    height:25px;
+}
+header .right .header-menu a{
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight:700;
+    color:rgb(184, 184, 184);
+}
+header .right .download-btn{
+    margin-right: 20px;
+}
+header .right .download-btn a{
+    display:flex;
+    color:rgb(184, 184, 184);
+    align-items: center;
+    font-size:14px;
+    font-weight: 700;
+}
+
+header .right .download-btn a svg{
+    width:20px;
+    margin-right: 10px;
+}
+header .right .login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .right .login a{
+    font-size: 14px;
+    color:rgb(184, 184, 184);
+    margin-right: 20px;
+    font-weight: 700;
+}
+header .right .login a.giris{
+    color:#000;
+    background-color: #fff;
+    border-radius: 25px;
+    padding:10px 20px;
+    font-weight: 700;
+}
+main{
+    display: flex;
+    width:100%;
+    background-color: #000;
+}
+main aside{
+    width:20%;
+    background-color:#121212;
+    height:100vh;
+    border-radius:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+main #content{
+    width:80%;
+    height:auto;
+    border-radius:10px;
+    margin-right:10px;
+    background-color: #121212;
+}
